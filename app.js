@@ -1,7 +1,13 @@
 /*jshint esversion: 6 */
-const product_img = Array.from(document.querySelectorAll(".img1"))[0].src;
-const productn = Array.from(document.querySelectorAll(".title"))[0].innerHTML;
-const price = Array.from(document.querySelectorAll(".price1"))[0].innerHTML;
-console.log(product_img);
-console.log(productn);
-console.log(price)
+
+
+const chart = Array.from(document.querySelectorAll(".fa-shopping-bag"));
+function myFunction (){
+  let namePic = Array.from(this.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".title"));
+   let price = Array.from(this.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".price")[0].querySelectorAll(".price1"));
+   let pic = Array.from(this.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".img")[0].querySelectorAll(".img1"));
+  console.log(namePic[0].innerHTML, price[0].innerHTML, pic[0].src);
+}
+for (let i=0; i<chart.length; i++){
+  chart[i].addEventListener('click', myFunction, false);
+}
