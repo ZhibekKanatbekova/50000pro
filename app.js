@@ -11,25 +11,32 @@
 //   chart[i].addEventListener('click', myFunction, false);
 //
 
-let num = parseInt(prompt("Enter the number"));
-function rad(a){
-return 2 * 3.14159 *a;
+// let num = parseInt(prompt("Enter the number"));
+// function rad(a){
+// return 2 * 3.14159 *a;
+// }
+// alert(rad(num));
+
+
+// let fnum = parseInt(prompt("First number please"));
+// let snum = parseInt(prompt("Power number please"));
+// function pove(x, y ){
+//   return Math.pow(x,y);
+// }
+// alert(pove(fnum, snum));
+
+
+
+// let wid = parseInt(prompt("give me wid number"));
+// let len = parseInt(prompt("give me length number"));
+// function triagle(w,l) {
+//   return w*l;
+// }
+// alert(triagle(wid,len));
+
+let number1 = parseFloat(prompt("Pervuu cifru"));
+let number2 = parseFloat(prompt("Vtoruu cifru"));
+function sum(a,b){
+  return (a+b).toFixed(0)
 }
-alert(rad(num));
-
-
-let fnum = parseInt(prompt("First number please"));
-let snum = parseInt(prompt("Power number please"));
-function pove(x, y ){
-  return Math.pow(x,y);
-}
-alert(pove(fnum, snum));
-
-
-
-let wid = parseInt(prompt("give me wid number"));
-let len = parseInt(prompt("give me length number"));
-function triagle(w,l) {
-  return w*l;
-}
-alert(triagle(wid,len));
+alert("the sum is " + sum(number1, number2) )
